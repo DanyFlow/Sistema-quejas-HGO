@@ -1,11 +1,11 @@
-# Aviso de privacidad — Sistema de Gestión de Quejas de Nómina
+# Aviso de privacidad — Sistema de Gestión de Quejas por descuento de nómina y bonos no pagados.
 
 
 Última actualización:01/11/2026
 
 ## 1. Responsable del tratamiento
 
-Hospital general de occidente / Departamento de control de asistencia, con domicilio en av. Zoquipan 1050 colonia Zoquipan, es responsable del tratamiento de los datos personales recabados mediante esta aplicación.
+Hospital general de occidente / Departamento de Recursos Humanos, con domicilio en av. Zoquipan 1050 colonia Seattle 45170, es responsable del tratamiento de los datos personales recabados mediante esta aplicación.
 
 Contacto para temas de privacidad: rh.ssj.hgo@gmail.com
 
@@ -20,7 +20,7 @@ Al registrar una queja de nómina, la aplicación solicita:
 | Laborales | Turno, tipo de incidencia, quincena afectada, días de la incidencia |
 | Económicos | Monto reclamado |
 | Descripción | Motivo y detalle de la queja, aclaraciones posteriores |
-| Documentos | Evidencias (PDF, PNG o JPG) y, opcionalmente, talón de pago |
+| Documentos | Evidencias (PDF, PNG o JPG) y talón de pago |
 
 Adicionalmente, el sistema genera: folio, código de seguimiento (solo se guarda su hash, no el código), estatus, historial de cambios, comentarios de Recursos Humanos y registros de auditoría (inicios de sesión de RH, descargas de adjuntos y eliminación de folios).
 
@@ -74,7 +74,7 @@ Ninguna medida elimina el riesgo por completo. Si detectas un problema de seguri
 
 ## 7. Cuánto tiempo conservamos los datos
 
-Las quejas y sus evidencias se conservan por **30 dias a partir del cierre de ticket**. Los folios eliminados desde el panel se **marcan como eliminados** y dejan de mostrarse, pero permanecen en la base de datos hasta su depuración definitiva, que se realiza **Semestralmente por el administrador del sistema**.
+Las quejas y sus evidencias se conservan por 30 dias a partir del cierre de una queja. Los folios eliminados desde el panel se marcan como "eliminados" y dejan de mostrarse, pero permanecen en la base de datos hasta su depuración definitiva, que se realiza Semestralmente (Julio y Enero) por el administrador del sistema.
 
 ## 8. Tus derechos
 
@@ -85,14 +85,13 @@ Puedes solicitar, mediante el contacto de la sección 1:
 - **Cancelación:** solicitar la supresión de tus datos, cuando proceda.
 - **Oposición:** oponerte al uso de tus datos para fines específicos.
 
-Para atender tu solicitud te pediremos identificarte y la responderemos en **Un maximo de 30 dias**. Algunos datos pueden conservarse por obligaciones laborales o legales.
+Para atender tu solicitud te pediremos identificarte y la responderemos en un plazo maximo de 30 dias. Algunos datos pueden conservarse por obligaciones laborales o legales.
 
 ## 9. Cambios a este aviso
 
-Si este aviso cambia, publicaremos la nueva versión en este repositorio con su fecha de actualización. [DESCRIBE AQUÍ CÓMO SE NOTIFICARÁ A LOS EMPLEADOS, p. ej. aviso dentro de la aplicación o comunicado interno].
+Si este aviso cambia, publicaremos la nueva versión en este repositorio con su fecha de actualización mediante una notificación dentro de la aplicación.
 
 ## 10. Seguridad del repositorio y reporte de vulnerabilidades
 
-- **No subas** datos reales de empleados, evidencias, `secrets.toml`, llaves de cuentas de servicio, `token.json` ni archivos `.env`. El `.gitignore` incluido ya los excluye; verifica antes de cada `commit`.
 - Si encuentras una vulnerabilidad, Repórtala de forma privada a **daniel.informatica.hgo** con una descripción del problema y los pasos para reproducirlo.
-- Si accidentalmente se publicó una credencial, rótala de inmediato en Google Cloud y avisa al contacto anterior.
+- Si accidentalmente se publicó una credencial, rótala de inmediato en Google Cloud y avisa al contacto especificado anteriormente.
