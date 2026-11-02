@@ -1,4 +1,4 @@
-# Condiciones de servicio — Sistema de Gestión de Quejas de Nómina
+# Condiciones de servicio — Sistema de Gestión de Quejas por Descuentos de Nomina o Bonos no Pagados
 
 
 
@@ -13,7 +13,7 @@ Al usar el Servicio aceptas estas condiciones. Si no estás de acuerdo, no lo us
 ## 2. Quién puede usarlo
 
 - **Empleados** de Hospital General de Occidente que quieran registrar o consultar una queja propia.
-- **Personal de RH y administradores** con usuario y contraseña asignados por Daniel Flores.
+- **Personal de RH y administradores** con usuario y contraseña autorizados por el jefe del departamento.
 
 El panel de gestión es de acceso restringido. Intentar entrar sin autorización está prohibido.
 
@@ -25,7 +25,7 @@ Al registrar o consultar una queja te comprometes a:
 - Dar información **veraz y completa**. Presentar datos o documentos falsos puede tener consecuencias laborales o legales.
 - Subir solo archivos **legítimos** en formato PDF, PNG o JPG, de máximo 5 MB cada uno, relacionados con tu queja. No se permiten archivos con código activo, contenido ilícito, ofensivo o que incluya datos de terceros sin necesidad.
 - **No intentar** adivinar folios o códigos de otras personas, saltarte los límites del sistema, ni afectar su funcionamiento.
-- Guardar tu **folio y código de seguimiento**. El código se muestra una sola vez al registrar; si lo pierdes, contacta a RH por [MEDIO DE CONTACTO]. Quien tenga tu folio, tarjeta y código puede consultar tu queja y responder a solicitudes de información, así que no los compartas.
+- Guardar tu **folio y código de seguimiento**. El código se muestra una sola vez al registrar; si lo pierdes envía un mensaje o acude con el personal de RH a cargo. Quien tenga tu folio, tarjeta y código puede consultar tu queja y responder a solicitudes de información, así que no los compartas.
 
 ## 4. Límites del servicio
 
@@ -41,15 +41,15 @@ Quienes tengan acceso al panel se obligan a:
 
 - Mantener **la confidencialidad** de las quejas, los documentos y los datos personales a los que accedan, y usarlos solo para atender la queja.
 - **No compartir** su usuario ni su contraseña, y cerrar sesión al terminar.
-- Usar contraseñas robustas y avisar de inmediato a [CONTACTO DE SEGURIDAD] si sospechan un acceso indebido.
-- Registrar respuestas veraces y claras. Los cambios de estatus, las descargas de adjuntos y otras acciones quedan en una bitácora de auditoría.
+- Usar contraseñas robustas y avisar de inmediato al personal de RH si sospechan un acceso indebido.
+- Registrar respuestas veraces y claras. Los cambios de estatus, las descargas de adjuntos y otras acciones quedan en una bitácora que puede ser auditada.
 - Contactar al empleado por WhatsApp solo cuando sea necesario para atender su queja.
 
 El incumplimiento puede dar lugar a la revocación del acceso y a las medidas que correspondan según las políticas del Hospital General de Occidente y la ley.
 
 ## 6. Qué esperar de una queja
 
-- Registrar una queja **no garantiza** que sea aceptada, ni un resultado, un monto o un plazo de respuesta determinado. Los estatus posibles son: Pendiente, En proceso, Requiere información, Resuelto y Rechazada. [PLAZO ESTIMADO DE ATENCIÓN, si aplica].
+- Registrar una queja **no garantiza** que sea aceptada, ni un resultado, un monto o un plazo de respuesta determinado. Los estatus posibles son: Pendiente, En proceso, Requiere información, Resuelto y Rechazada. Al proporcionar la información requerida para el trámite se trabajará a la brevedad.
 - RH puede solicitar información adicional. Si no la proporcionas, la queja puede quedar sin resolverse o ser rechazada.
 - Se puede evitar el duplicado de una queja activa para la misma tarjeta, tipo e incidencia en la misma quincena.
 - Usar el Servicio **no sustituye ni limita** los derechos y medios de defensa que la ley laboral o tu contrato te otorguen.
@@ -68,18 +68,18 @@ Podemos limitar, suspender o retirar el acceso de cualquier persona que incumpla
 
 ## 10. Propiedad intelectual
 
-El código fuente de esta aplicación se distribuye bajo la licencia **[LICENCIA MIT / privada.  "todos los derechos reservados". Los documentos y datos que subas siguen siendo tuyos; nos autorizas únicamente a tratarlos para atender tu queja conforme al Aviso de privacidad.
+El código fuente de esta aplicación se distribuye bajo la licencia MIT.  "todos los derechos reservados". Los documentos y datos que subas siguen siendo tuyos; nos autorizas únicamente a tratarlos para atender tu queja conforme al Aviso de privacidad.
 
 ## 11. Limitación de responsabilidad
 
-En la medida permitida por la ley, [NOMBRE DE LA EMPRESA] no será responsable de daños derivados de interrupciones del Servicio, de datos o documentos incorrectos proporcionados por los usuarios, ni del mal uso de credenciales o códigos de seguimiento por causas atribuibles a quien los recibió. Esto no limita las obligaciones que la ley laboral impone al empleador.
+En la medida permitida por la ley, el Hospital general de occidente no será responsable de daños derivados de interrupciones del Servicio, de datos o documentos incorrectos proporcionados por los usuarios, ni del mal uso de credenciales o códigos de seguimiento por causas atribuibles a quien los recibió. Esto no limita las obligaciones que la ley laboral impone al empleador.
 
 ## 12. Cambios a estas condiciones
 
-Podemos actualizar estas condiciones. Publicaremos la versión vigente en este repositorio con su fecha. [DESCRIBE CÓMO SE AVISARÁ A LOS EMPLEADOS]. Si continúas usando el Servicio después del cambio, se entiende que lo aceptas.
+Podemos actualizar estas condiciones. Publicaremos la versión vigente en este repositorio con su fecha. Mediante una notificación en la aplicación. Si continúas usando el Servicio después del cambio, se entiende que lo aceptas.
 
 ## 13. Ley aplicable y contacto
 
-Estas condiciones se rigen por las leyes de **MExico / Jalsico**, y las controversias se someterán a los tribunales de **Jalisco**, sin perjuicio de los derechos que la ley te reconozca.
+Estas condiciones se rigen por las leyes de Jalisco, y las controversias se someterán a los tribunales correspondientes, sin perjuicio de los derechos que la ley te reconozca.
 
 Dudas sobre estas condiciones: **rh.ssj.hgo@gmail.com**.
