@@ -1,4 +1,4 @@
-# Condiciones de servicio — Sistema de Gestión de Quejas por Descuentos de Nomina o Bonos no Pagados
+# Condiciones de servicio — Sistema de Gestión de Quejas por Descuentos en la Nomina o Bonos no Pagados
 
 
 
