@@ -1,4 +1,4 @@
-# Aviso de privacidad — Sistema de Gestión de Quejas por descuento de nómina y bonos no pagados.
+# Aviso de privacidad — Sistema de Gestión de Quejas por Descuento de Nómina o Bonos no Pagados.
 
 
 Última actualización:01/11/2026
