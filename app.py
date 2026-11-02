@@ -112,7 +112,7 @@ def pagina_inicio():
 
     st.subheader("¿Cómo funciona?")
     a, b, c = st.columns(3)
-    a.markdown(tarjeta("1️⃣", "Llena tus datos para dar seguimiento", "Tu tarjeta, tu nombre y un teléfono para contactarte."), unsafe_allow_html=True)
+    a.markdown(tarjeta("1️⃣", "Llena tus datos para comenzar", "Tu tarjeta, tu nombre y un teléfono para contactarte."), unsafe_allow_html=True)
     b.markdown(tarjeta("2️⃣", "Guarda tu folio y tu clave", "Al terminar te damos un comprobante en PDF."), unsafe_allow_html=True)
     c.markdown(tarjeta("3️⃣", "Consulta cuando quieras", "Entra a «Consultar mi queja» y mira el avance."), unsafe_allow_html=True)
 
