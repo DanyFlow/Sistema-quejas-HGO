@@ -1118,7 +1118,9 @@ else:
 st.markdown(pie_legal(URL_PRIVACIDAD, URL_TERMINOS), unsafe_allow_html=True)
 
 # Firma flotante
-enlace_perfil = "https://share.streamlit.io/user/danyflow"
+# Firma flotante
+url_imagen_drive = "https://i.redd.it/snoovatar/avatars/98e5bfa6-95f3-46d8-8754-7a64c0099533.png"
+enlace_perfil = "https://github.com/DanyFlow"
 
 firma_html = f"""
 <style>
@@ -1162,7 +1164,6 @@ firma_html = f"""
     flex-shrink: 0 !important;
     border: 1.5px solid rgba(255, 255, 255, 0.9) !important;
 }}
-.firma-avatar {{ width: 30px; height: 30px; display: flex; align-items: center; justify-content: center; border-radius: 50%; background: #ffffff; color: #0891b2; font-size: 16px; flex-shrink: 0; }}
 .firma-texto {{
     margin-left: 12px !important;
     opacity: 0 !important;
@@ -1179,7 +1180,7 @@ firma_html = f"""
 </style>
 <a href="{enlace_perfil}" target="_blank" rel="noopener noreferrer" class="firma-flotante-link" title="Visitar perfil de Streamlit">
     <div class="firma-flotante">
-        <span class="firma-avatar">⚡</span>
+        <img src="{url_imagen_drive}" alt="Dany FloVel">
         <div class="firma-texto">
             <span class="firma-titulo">By Dany FloVel</span>
             <span class="firma-sub">⚡ Ver perfil ⚡</span>
