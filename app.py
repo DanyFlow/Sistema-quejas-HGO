@@ -104,7 +104,7 @@ def pagina_inicio():
 
     c1, c2 = st.columns(2)
     with c1:
-        st.markdown(tarjeta("📝", "Registrar una queja", "Cuéntanos qué pasó con tu pago. Te toma unos minutos."), unsafe_allow_html=True)
+        st.markdown(tarjeta("📝", "Registrar una queja", "Cuéntanos qué pasó con tu pago"), unsafe_allow_html=True)
         st.button("➕ Registrar una queja", key="home_registrar", on_click=ir_a, args=("Registrar una queja",))
     with c2:
         st.markdown(tarjeta("🔎", "Consultar mi queja", "Mira cómo va tu caso con tu folio y tu clave."), unsafe_allow_html=True)
