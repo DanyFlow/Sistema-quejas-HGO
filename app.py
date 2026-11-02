@@ -88,25 +88,56 @@ if NOMBRE_EMPRESA:
     st.sidebar.markdown(f"**{md(NOMBRE_EMPRESA)}**")
 st.sidebar.markdown("### 📋 Menú")
 
-# Navegación con botones uniformes: mismo ancho, altura y texto centrado.
+
+# Navegación con botones uniformes y alto contraste para tema claro y oscuro
 st.markdown("""
 <style>
+/* Estilo base para los botones del menú lateral */
 [data-testid="stSidebar"] div.stButton > button {
-    width: 100%;
-    min-height: 3.15rem;
-    height: 3.15rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    white-space: normal;
-    line-height: 1.15;
-    padding: 0.35rem 0.45rem;
+    width: 100% !important;
+    min-height: 3.15rem !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    
+    /* Colores y visibilidad para Tema Claro */
+    background-color: #F0F2F6 !important; /* Fondo gris claro suave */
+    color: #1F2937 !important;            /* Texto oscuro de alto contraste */
+    border: 1px solid #D1D5DB !important;  /* Borde visible */
+    border-radius: 8px !important;
+    font-weight: 600 !important;
+    font-size: 0.95rem !important;
+    transition: all 0.2s ease-in-out !important;
 }
-[data-testid="stSidebar"] div.stButton > button p {
-    width: 100%;
-    text-align: center;
-    margin: 0;
+
+/* Efecto al pasar el cursor (Hover) */
+[data-testid="stSidebar"] div.stButton > button:hover {
+    background-color: #E5E7EB !important; /* Gris un poco más oscuro */
+    color: #111827 !important;
+    border-color: #9CA3AF !important;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05) !important;
+}
+
+/* Estado activo / enfocado (Focus/Active) */
+[data-testid="stSidebar"] div.stButton > button:focus, 
+[data-testid="stSidebar"] div.stButton > button:active {
+    background-color: #D1D5DB !important;
+    color: #111827 !important;
+    border-color: #4B5563 !important;
+    box-shadow: none !important;
+}
+
+/* Soporte automático para usuarios con Tema Oscuro (Dark Mode) */
+@media (prefers-color-scheme: dark) {
+    [data-testid="stSidebar"] div.stButton > button {
+        background-color: #262730 !important;
+        color: #FAFAFA !important;
+        border: 1px solid #4B5563 !important;
+    }
+    [data-testid="stSidebar"] div.stButton > button:hover {
+        background-color: #31333F !important;
+        border-color: #6B7280 !important;
+    }
 }
 </style>
 """, unsafe_allow_html=True)
