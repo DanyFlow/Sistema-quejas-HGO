@@ -186,7 +186,7 @@ def pagina_inicio():
     st.markdown(css_ancho(1100), unsafe_allow_html=True)
     st.markdown(hero(
         "Portal de atención · Recursos Humanos · Hospital General de Occidente ",
-        "Quejas y aclaraciones de conceptos en la Nomina",
+        "Quejas por descuentos o bonos no pagados en la nomina",
         "Si tu pago llegó con un descuento o no se te pago un bono y consideras que es un error, cuéntanoslo aquí. Es rápido y puedes ver el avance de tu caso en cualquier momento.",
     ), unsafe_allow_html=True)
 
