@@ -185,9 +185,9 @@ def boton_inicio():
 def pagina_inicio():
     st.markdown(css_ancho(1100), unsafe_allow_html=True)
     st.markdown(hero(
-        "Portal de atención · Recursos Humanos",
-        "Quejas de nómina",
-        "Si tu pago llegó con un error, cuéntanoslo aquí. Es rápido y puedes ver cómo va tu caso cuando quieras.",
+        "Portal de atención · Recursos Humanos · Hospital General de Occidente ",
+        "Quejas por descuento en la nómina/Bonos no pagados",
+        "Si tu pago llegó con un descuento y consideras que es un error, cuéntanoslo aquí. Es rápido y puedes ver el avance de tu caso cuando quieras.",
     ), unsafe_allow_html=True)
 
     c1, c2 = st.columns(2)
