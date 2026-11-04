@@ -44,7 +44,7 @@ logger = logging.getLogger("quejas")
 URL_TERMINOS = "https://github.com/DanyFlow/Sistema-quejas-HGO/blob/main/TERMS.md"
 URL_PRIVACIDAD = "https://github.com/DanyFlow/Sistema-quejas-HGO/blob/main/PRIVACY.md"
 SELLO_COMPROBANTE = os.path.join(os.path.dirname(os.path.abspath(__file__)), "sello_recibido.png")
-SELLO_ANGULO = 45   # grados (positivo = gira a la izquierda, negativo = a la derecha, 0 = derecho)
+SELLO_ANGULO = 5   # grados (positivo = gira a la izquierda, negativo = a la derecha, 0 = derecho)
 
 INACTIVIDAD_SEG = 30 * 60      # 30 min sin actividad -> cierra sesión del panel
 SESION_MAX_SEG = 8 * 60 * 60   # 8 h máximo aunque haya actividad
