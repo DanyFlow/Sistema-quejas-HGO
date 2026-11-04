@@ -21,10 +21,14 @@ def obtener_conexion():
 _TIPOS_POR_DEFECTO = [
     {"nombre": "Descuento por omisión", "requiere_monto": True, "activo": True},
     {"nombre": "Permiso no aplicado", "requiere_monto": True, "activo": True},
-    {"nombre": "Falta de pago de horas extra", "requiere_monto": True, "activo": True},
-    {"nombre": "Descuento indebido de nómina", "requiere_monto": True, "activo": True},
-    {"nombre": "Incapacidad no aplicada", "requiere_monto": True, "activo": True},
-    {"nombre": "Diferencia en pago de bono", "requiere_monto": True, "activo": True},
+    {"nombre": "Descuento por responsabilidades (Exceso de Incapacidad)", "requiere_monto": True, "activo": True},
+    {"nombre": "Bono de reyes", "requiere_monto": True, "activo": True},
+    {"nombre": "Bono del dia de las madres", "requiere_monto": True, "activo": True},
+    {"nombre": "Aguinaldo", "requiere_monto": True, "activo": True},
+    {"nombre": "Prima dominical", "requiere_monto": True, "activo": True},
+    {"nombre": "Estimulo Trimmestral", "requiere_monto": True, "activo": True},
+    {"nombre": "Estimulos anuales", "requiere_monto": True, "activo": True},    
+    {"nombre": "Medidas de fin de año", "requiere_monto": True, "activo": True},
     {"nombre": "Otro tipo de incidencia", "requiere_monto": True, "activo": True},
 ]
 
