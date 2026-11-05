@@ -41,8 +41,8 @@ logger = logging.getLogger("quejas")
 # ---------------------------------------------------------------------------
 # Configuración
 # ---------------------------------------------------------------------------
-URL_TERMINOS = "https://github.com/DanyFlow/Sistema-quejas-HGO/blob/main/TERMS.md"
-URL_PRIVACIDAD = "https://github.com/DanyFlow/Sistema-quejas-HGO/blob/main/PRIVACY.md"
+URL_TERMINOS = "https://drive.google.com/file/d/1kIsgycSCz8rhEr_yxYKxL5g43WxDsjAZ/view?usp=sharing"
+URL_PRIVACIDAD = "https://drive.google.com/file/d/1qPh7kV2bbUxe1OsMo7MEpUSENTj1t8MQ/view?usp=sharing"
 SELLO_COMPROBANTE = os.path.join(os.path.dirname(os.path.abspath(__file__)), "sello_recibido.png")
 SELLO_ANGULO = 5   # grados (positivo = gira a la izquierda, negativo = a la derecha, 0 = derecho)
 
