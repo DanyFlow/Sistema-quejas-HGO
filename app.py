@@ -41,8 +41,8 @@ logger = logging.getLogger("quejas")
 # ---------------------------------------------------------------------------
 # Configuración
 # ---------------------------------------------------------------------------
-URL_TERMINOS = "https://drive.google.com/file/d/1kIsgycSCz8rhEr_yxYKxL5g43WxDsjAZ/view?usp=sharing"
-URL_PRIVACIDAD = "https://drive.google.com/file/d/1qPh7kV2bbUxe1OsMo7MEpUSENTj1t8MQ/view?usp=sharing"
+URL_TERMINOS = "https://drive.google.com/file/d/1p6BkJ-gbAUh9OTO-V8YVdbqwihNh8KPG/view?usp=sharing"
+URL_PRIVACIDAD = "https://drive.google.com/file/d/18datR573p0CnSd4EnQDB1HMqDplSoz48/view?usp=sharing"
 SELLO_COMPROBANTE = os.path.join(os.path.dirname(os.path.abspath(__file__)), "sello_recibido.png")
 SELLO_ANGULO = 5   # grados (positivo = gira a la izquierda, negativo = a la derecha, 0 = derecho)
 
