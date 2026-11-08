@@ -1425,7 +1425,7 @@ firma_html = f"""
         <img src="{url_imagen_drive}" alt="Dany FloVel">
         <div class="firma-texto">
             <span class="firma-titulo">♠️ Por Dany FloVel ♠️</span>
-            <span class="firma-sub">⚡_____ Contacto _____⚡</span>
+            <span class="firma-sub">⚡______ Contacto ______⚡</span>
         </div>
     </div>
 </a>
