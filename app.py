@@ -1359,10 +1359,10 @@ else:
 
 st.markdown(pie_legal(URL_PRIVACIDAD, URL_TERMINOS), unsafe_allow_html=True)
 
-# Firma flotante https://github.com/DanyFlow
+# Firma flotante enlace_perfil = "https://github.com/DanyFlow"
 # Firma flotante <span class="firma-sub">⚡ Ver perfil ⚡</span>
 url_imagen_drive = "https://i.redd.it/snoovatar/avatars/98e5bfa6-95f3-46d8-8754-7a64c0099533.png"
-enlace_perfil = ""
+
 
 firma_html = f"""
 <style>
