@@ -214,10 +214,10 @@ def pagina_inicio():
     c1, c2 = st.columns(2)
     with c1:
         st.markdown(tarjeta("📝", "Registrar una solicitud de aclaracion", "Cuéntanos qué pasó con tu pago"), unsafe_allow_html=True)
-        st.button("➕ Registrar una queja", key="home_registrar", on_click=ir_a, args=("Registrar una solicitud de aclaracion",))
+        st.button("➕ Registrar Solicitud", key="home_registrar", on_click=ir_a, args=("Registrar una solicitud de aclaracion",))
     with c2:
         st.markdown(tarjeta("🔎", "Consultar estatus de mi solicitud", "Mira cómo va tu caso con tu folio y tu clave."), unsafe_allow_html=True)
-        st.button("🔎 Consultar mi queja", key="home_consultar", on_click=ir_a, args=("Consultar estatus de mi solicitud",))
+        st.button("🔎 Consultar Solicitud", key="home_consultar", on_click=ir_a, args=("Consultar estatus de mi solicitud",))
 
     st.subheader("¿Cómo funciona?")
     a, b, c = st.columns(3)
