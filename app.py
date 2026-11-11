@@ -87,7 +87,7 @@ st.markdown(CSS, unsafe_allow_html=True)
 # ---------------------------------------------------------------------------
 # Navegación
 # ---------------------------------------------------------------------------
-PAGINAS = ["Inicio", "Registrar solicitud de aclaracion", "Consultar mi solicitud", "Acceso RH"]
+PAGINAS = ["Inicio", "Registrar solicitud de aclaracion", "Consultar estatus de mi solicitud", "Acceso RH"]
 st.session_state.setdefault("pagina", "Inicio")
 
 
@@ -181,7 +181,7 @@ st.markdown("""
 for _opcion, _etiqueta in [
     ("Inicio", "🏠 Inicio"),
     ("Registrar solicitud de aclaracion", "📝 Registrar solicitud de aclaracion"),
-    ("Consultar estatus de solicitud", "🔎 Consultar estatus de solicitud"),
+    ("Consultar estatus de mi solicitud", "🔎 Consultar estatus de mi solicitud"),
     ("Acceso RH", "🔐 Acceso RH"),
 ]:
     st.sidebar.button(
@@ -216,14 +216,14 @@ def pagina_inicio():
         st.markdown(tarjeta("📝", "Registrar una solicitud de aclaracion", "Cuéntanos qué pasó con tu pago"), unsafe_allow_html=True)
         st.button("➕ Registrar una queja", key="home_registrar", on_click=ir_a, args=("Registrar una solicitud de aclaracion",))
     with c2:
-        st.markdown(tarjeta("🔎", "Consultar mi solicitud", "Mira cómo va tu caso con tu folio y tu clave."), unsafe_allow_html=True)
-        st.button("🔎 Consultar mi queja", key="home_consultar", on_click=ir_a, args=("Consultar mi solicitud",))
+        st.markdown(tarjeta("🔎", "Consultar estatus de mi solicitud", "Mira cómo va tu caso con tu folio y tu clave."), unsafe_allow_html=True)
+        st.button("🔎 Consultar mi queja", key="home_consultar", on_click=ir_a, args=("Consultar estatus de mi solicitud",))
 
     st.subheader("¿Cómo funciona?")
     a, b, c = st.columns(3)
     a.markdown(tarjeta("1️⃣", "Llena tus datos para comenzar", "Tu tarjeta, tu nombre y un teléfono para contactarte."), unsafe_allow_html=True)
     b.markdown(tarjeta("2️⃣", "Guarda tu folio y tu clave", "Al terminar te damos un comprobante en PDF."), unsafe_allow_html=True)
-    c.markdown(tarjeta("3️⃣", "Consulta cuando quieras", "Entra a «Consultar mi queja» y mira el avance."), unsafe_allow_html=True)
+    c.markdown(tarjeta("3️⃣", "Consulta cuando quieras", "Entra a «Consultar estatus de mi solicitud» y mira el avance."), unsafe_allow_html=True)
 
     if CONTACTO_AYUDA:
         st.info(f"💬 ¿Necesitas ayuda? {md(CONTACTO_AYUDA)}")
