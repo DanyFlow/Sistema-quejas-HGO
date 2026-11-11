@@ -205,53 +205,33 @@ def boton_inicio():
 def pagina_inicio():
     st.markdown(css_ancho(1100), unsafe_allow_html=True)
     
-    # Contenedor principal que centra todo el texto de la página
-    st.markdown(
-        """
-        <div style="text-align: center;">
-        """, 
-        unsafe_allow_html=True
-    )
-    
-    # --- HERO ---
+    # Envolvemos el hero en un div con estilo centrado
     st.markdown(
         f"""
-        {hero(
-            "Portal de atención · Recursos Humanos · Hospital General de Occidente ",
-            "SOLICITUD DE ACLARACION POR DESCUENTO EN NOMINA O BONO NO PAGADO",
-            "Si tu pago llegó con un descuento o no se te pago un bono y consideras que es un error, cuéntanoslo aquí. Es rápido y puedes ver el avance de tu caso en cualquier momento."
-        )}
+        <div style="text-align: center;">
+            {hero(
+                "Portal de atención · Recursos Humanos · Hospital General de Occidente ",
+                "SOLICITUD DE ACLARACION POR DESCUENTO EN NOMINA O BONO NO PAGADO",
+                "Si tu pago llegó con un descuento o no se te pago un bono y consideras que es un error, cuéntanoslo aquí. Es rápido y puedes ver el avance de tu caso en cualquier momento."
+            )}
+        </div>
         """, 
         unsafe_allow_html=True
     )
 
-    # --- ACCIONES PRINCIPALES (2 Columnas) ---
     c1, c2 = st.columns(2)
     with c1:
         st.markdown(tarjeta("📝", "Registrar una solicitud de aclaracion", "Cuéntanos qué pasó con tu pago"), unsafe_allow_html=True)
-        # Centramos el botón inyectando un div flex al rededor o usando un contenedor
-        st.markdown('<div style="display: flex; justify-content: center;">', unsafe_allow_html=True)
         st.button("➕ Registrar Solicitud", key="home_registrar", on_click=ir_a, args=("Registrar una solicitud de aclaracion",))
-        st.markdown('</div>', unsafe_allow_html=True)
-        
     with c2:
         st.markdown(tarjeta("🔎", "Consultar estatus de mi solicitud", "Mira cómo va tu caso con tu folio y tu clave."), unsafe_allow_html=True)
-        st.markdown('<div style="display: flex; justify-content: center;">', unsafe_allow_html=True)
         st.button("🔎 Consultar Solicitud", key="home_consultar", on_click=ir_a, args=("Consultar estatus de mi solicitud",))
-        st.markdown('</div>', unsafe_allow_html=True)
 
-    # --- SECCIÓN: CÓMO FUNCIONA ---
-    # Nota: st.subheader por defecto está alineado a la izquierda, 
-    # por lo que lo pasamos por markdown con HTML para que respete el centrado.
-    st.markdown("<h3 style='text-align: center; margin-top: 2rem;'>¿Cómo funciona?</h3>", unsafe_allow_html=True)
-    
+    st.subheader("¿Cómo funciona?")
     a, b, c = st.columns(3)
     a.markdown(tarjeta("1️⃣", "Llena tus datos para comenzar", "Tu tarjeta, tu nombre y un teléfono para contactarte."), unsafe_allow_html=True)
     b.markdown(tarjeta("2️⃣", "Guarda tu folio y tu clave", "Al terminar te damos un comprobante en PDF."), unsafe_allow_html=True)
     c.markdown(tarjeta("3️⃣", "Consulta cuando quieras", "Entra a «Consultar estatus de mi solicitud» y mira el avance."), unsafe_allow_html=True)
-
-    # Cerramos el div principal de centrado
-    st.markdown("</div>", unsafe_allow_html=True)
 
     if CONTACTO_AYUDA:
         st.info(f"💬 ¿Necesitas ayuda? {md(CONTACTO_AYUDA)}")
