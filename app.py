@@ -347,7 +347,7 @@ def formulario_queja(i, opciones_tipos):
 
     dias = []
     if tipo in TIPOS_CON_DIAS:
-        st.markdown("##### 3. ¿Qué días fueron?")
+        st.markdown("##### 3. ¿Qué dia fue la incidencia?")
         st.caption("Selecciona los días de esta incidencia. Puedes elegir hasta 5.")
         if periodo.startswith("Q1"):
             rango = list(range(1, 16))
@@ -372,7 +372,7 @@ def formulario_queja(i, opciones_tipos):
         if st.button("Quitar estos archivos", key=f"quitar_evid_{uid}"):
             q["evidencias"] = []
             st.rerun()
-    talon_subido = st.file_uploader("🧾 Tu talón de pago (opcional)", type=FORMATOS_ARCHIVO, key=f"talon_{uid}")
+    talon_subido = st.file_uploader("🧾 Tu talón de pago (Donde se realizo el descuento)", type=FORMATOS_ARCHIVO, key=f"talon_{uid}")
     talon = talon_subido if talon_subido is not None else q["talon"]
     if talon is not None and talon_subido is None:
         st.success(f"🧾 Ya adjuntaste: {sanear_nombre(talon.name)}")
