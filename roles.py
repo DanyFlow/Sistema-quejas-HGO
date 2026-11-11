@@ -18,11 +18,12 @@ _PERMISOS_ANALISTA = frozenset({
     "whatsapp",
     "solicitar_info_control",    # pedir información a Control de asistencia
     "ver_solicitudes_control",
+    "ver_metricas", 
 })
 
 PERMISOS = {
     ROL_RH: _PERMISOS_ANALISTA,
-    ROL_ADMIN: _PERMISOS_ANALISTA | {"eliminar_folios", "exportar_datos"},
+    ROL_ADMIN: _PERMISOS_ANALISTA | {"eliminar_folios", "exportar_datos","ver_metricas"},
     # Control de asistencia: solo lectura + responder solicitudes que el analista le haga.
     # No ve teléfono, monto ni talón de pago, y no modifica tickets.
     ROL_CONTROL: frozenset({
