@@ -509,15 +509,15 @@ def mostrar_resultado():
                        mime="application/pdf", type="primary")
     c1, c2 = st.columns(2)
     with c1:
-        st.button("➕ Registrar otra queja", key="res_otra", on_click=_nueva_queja)
+        st.button("➕ Registrar Solicitud", key="res_otra", on_click=_nueva_queja)
     with c2:
-        st.button("🔎 Consultar mi queja", key="res_consultar", on_click=ir_a, args=("Consultar mi queja",))
+        st.button("🔎 Consultar Solicitud", key="res_consultar", on_click=ir_a, args=("Consultar mi queja",))
 
 
 def pagina_registrar():
     st.markdown(css_ancho(920), unsafe_allow_html=True)
     boton_inicio()
-    st.header("✍️ Registrar una queja")
+    st.header("✍️ Registrar una solicitud de aclaracion")
 
     if st.session_state.get("resultado_registro"):
         mostrar_resultado()
@@ -541,7 +541,7 @@ def pagina_registrar():
 def pagina_consultar():
     st.markdown(css_ancho(920), unsafe_allow_html=True)
     boton_inicio()
-    st.header("🔎 Consultar mi queja")
+    st.header("🔎 Consultar Solicitud")
     st.markdown('<div class="section-intro">Escribe tu folio, tu número de tarjeta y la clave que te dimos al registrar tu queja.</div>',
                 unsafe_allow_html=True)
 
