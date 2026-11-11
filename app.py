@@ -180,7 +180,7 @@ st.markdown("""
 
 for _opcion, _etiqueta in [
     ("Inicio", "🏠 Inicio"),
-    (""Registrar solicitud de aclaracion"", "📝 "Registrar solicitud de aclaracion""),
+    ("Registrar solicitud de aclaracion", "📝 Registrar solicitud de aclaracion"),
     ("Consultar estatus de solicitud", "🔎 Consultar estatus de solicitud"),
     ("Acceso RH", "🔐 Acceso RH"),
 ]:
