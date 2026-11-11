@@ -87,7 +87,7 @@ st.markdown(CSS, unsafe_allow_html=True)
 # ---------------------------------------------------------------------------
 # Navegación
 # ---------------------------------------------------------------------------
-PAGINAS = ["Inicio", "Registrar una queja", "Consultar mi queja", "Acceso RH"]
+PAGINAS = ["Inicio", "Registrar solicitud de aclaracion", "Consultar mi solicitud", "Acceso RH"]
 st.session_state.setdefault("pagina", "Inicio")
 
 
@@ -180,8 +180,8 @@ st.markdown("""
 
 for _opcion, _etiqueta in [
     ("Inicio", "🏠 Inicio"),
-    ("Registrar una queja", "📝 Registrar una queja"),
-    ("Consultar mi queja", "🔎 Consultar una queja"),
+    (""Registrar solicitud de aclaracion"", "📝 "Registrar solicitud de aclaracion""),
+    ("Consultar estatus de solicitud", "🔎 Consultar estatus de solicitud"),
     ("Acceso RH", "🔐 Acceso RH"),
 ]:
     st.sidebar.button(
@@ -213,11 +213,11 @@ def pagina_inicio():
 
     c1, c2 = st.columns(2)
     with c1:
-        st.markdown(tarjeta("📝", "Registrar una queja", "Cuéntanos qué pasó con tu pago"), unsafe_allow_html=True)
-        st.button("➕ Registrar una queja", key="home_registrar", on_click=ir_a, args=("Registrar una queja",))
+        st.markdown(tarjeta("📝", "Registrar una solicitud de aclaracion", "Cuéntanos qué pasó con tu pago"), unsafe_allow_html=True)
+        st.button("➕ Registrar una queja", key="home_registrar", on_click=ir_a, args=("Registrar una solicitud de aclaracion",))
     with c2:
-        st.markdown(tarjeta("🔎", "Consultar mi queja", "Mira cómo va tu caso con tu folio y tu clave."), unsafe_allow_html=True)
-        st.button("🔎 Consultar mi queja", key="home_consultar", on_click=ir_a, args=("Consultar mi queja",))
+        st.markdown(tarjeta("🔎", "Consultar mi solicitud", "Mira cómo va tu caso con tu folio y tu clave."), unsafe_allow_html=True)
+        st.button("🔎 Consultar mi queja", key="home_consultar", on_click=ir_a, args=("Consultar mi solicitud",))
 
     st.subheader("¿Cómo funciona?")
     a, b, c = st.columns(3)
