@@ -24,7 +24,7 @@ def generar_pdf(resultados, empresa="", fecha_txt="", pie_lineas=(), sello=None,
     """
     buf = io.BytesIO()
     c = canvas.Canvas(buf, pagesize=A4)
-    c.setTitle("Comprobante de queja de nómina")
+    c.setTitle("COMPROBANTE DE SOLICITUD DE ACLARACION")
     ancho, alto = A4
     margen = 50
     util = ancho - 2 * margen
