@@ -205,11 +205,20 @@ def boton_inicio():
 # ===========================================================================
 def pagina_inicio():
     st.markdown(css_ancho(1100), unsafe_allow_html=True)
-    st.markdown(hero(
-        "Portal de atención · Recursos Humanos · Hospital General de Occidente ",
-        "SOLICITUD DE ACLARACION POR DESCUENTO EN NOMINA O BONO NO PAGADO",
-        "Si tu pago llegó con un descuento o no se te pago un bono y consideras que es un error, cuéntanoslo aquí. Es rápido y puedes ver el avance de tu caso en cualquier momento.",
-    ), unsafe_allow_html=True)
+    
+    # Envolvemos el hero en un div con estilo centrado
+    st.markdown(
+        f"""
+        <div style="text-align: center;">
+            {hero(
+                "Portal de atención · Recursos Humanos · Hospital General de Occidente ",
+                "SOLICITUD DE ACLARACION POR DESCUENTO EN NOMINA O BONO NO PAGADO",
+                "Si tu pago llegó con un descuento o no se te pago un bono y consideras que es un error, cuéntanoslo aquí. Es rápido y puedes ver el avance de tu caso en cualquier momento."
+            )}
+        </div>
+        """, 
+        unsafe_allow_html=True
+    )
 
     c1, c2 = st.columns(2)
     with c1:
