@@ -1585,9 +1585,9 @@ def pagina_rh():
 # ENRUTADOR + PIE
 # ===========================================================================
 _pagina = st.session_state.get("pagina", "Inicio")
-if _pagina == "Registrar una queja":
+if _pagina in ("Registrar una queja", "Registrar solicitud de aclaracion", "Registrar una solicitud de aclaracion"):
     pagina_registrar()
-elif _pagina == "Consultar mi queja":
+elif _pagina in ("Consultar mi queja", "Consultar estatus de mi solicitud"):
     pagina_consultar()
 elif _pagina == "Acceso RH":
     pagina_rh()
