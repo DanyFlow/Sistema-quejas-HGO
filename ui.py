@@ -20,7 +20,7 @@ ESTADOS = {
     
 }
 ESTADOS_ORDEN = list(ESTADOS)
-CLAVE_CSS_ESTADO = {"Pendiente": "pend", "En proceso": "proc", "Requiere información": "info","Pasar a firmar solicitud": "pasar"
+CLAVE_CSS_ESTADO = {"Pendiente": "pend", "En proceso": "proc", "Requiere información": "info","Pasar a firmar solicitud": "pasar",
                     "Resuelto": "res", "Rechazada": "rech"}
 
 
