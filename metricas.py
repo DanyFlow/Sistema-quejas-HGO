@@ -12,8 +12,8 @@ import datetime
 
 import pandas as pd
 
-ESTADOS_ORDEN = ["Pendiente", "En proceso", "Requiere información", "Resuelto", "Rechazada"]
-ABIERTOS = ("Pendiente", "En proceso", "Requiere información")
+ESTADOS_ORDEN = ["Pendiente", "En proceso", "Requiere información", "Pasar a firmar solicitud",  "Resuelto", "Rechazada"]
+ABIERTOS = ("Pendiente", "En proceso", "Requiere información", "Pasar a firmar solicitud")
 FINALES = ("Resuelto", "Rechazada")
 
 # Mismos colores que los botones de estatus del panel
@@ -21,6 +21,7 @@ COLOR_ESTATUS = {
     "Pendiente": "#f59e0b",
     "En proceso": "#3b82f6",
     "Requiere información": "#f97316",
+    "Pasar a firmar solicitud": "#cffafe",
     "Resuelto": "#22c55e",
     "Rechazada": "#ef4444",
 }
