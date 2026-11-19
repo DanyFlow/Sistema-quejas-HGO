@@ -41,7 +41,7 @@ PLANTILLAS = [
     {"etiqueta": "🔁 Queja duplicada", "estatus": "Rechazada",
      "texto": "Hola {nombre}, tu solicitud con folio {folio} ya estaba registrada con el folio [COMPLETAR], "
               "por eso la cerramos. Puedes seguir el avance en ese folio."},
-    {"etiqueta": "✍️ Pasar a firmar", "estatus": "Pasar a firmar solitud",
+    {"etiqueta": "✍️ Pasar a firmar", "estatus": "Pasar a firmar solicitud",
      "texto": "Hola {nombre}, la informacion de tu solitud con folio {folio} fue procesada y esta lista para su envio a oficinas centrales, pasa a firmar la solitud para continuar con el tramite."
               },
 ]
