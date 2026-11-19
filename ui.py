@@ -14,11 +14,13 @@ ESTADOS = {
     "Pendiente": ("🟡", "#fef3c7", "#78350f"),
     "En proceso": ("🔵", "#dbeafe", "#1e3a8a"),
     "Requiere información": ("🟠", "#ffedd5", "#7c2d12"),
+    "Pasar a firmar solicitud": ("✍️", "#cffafe", "#164e63"),
     "Resuelto": ("🟢", "#dcfce7", "#14532d"),
     "Rechazada": ("🔴", "#fee2e2", "#7f1d1d"),
+    
 }
 ESTADOS_ORDEN = list(ESTADOS)
-CLAVE_CSS_ESTADO = {"Pendiente": "pend", "En proceso": "proc", "Requiere información": "info",
+CLAVE_CSS_ESTADO = {"Pendiente": "pend", "En proceso": "proc", "Requiere información": "info","Pasar a firmar solicitud": "pasar"
                     "Resuelto": "res", "Rechazada": "rech"}
 
 
@@ -88,6 +90,7 @@ button:focus-visible, a:focus-visible, input:focus-visible, textarea:focus-visib
 [class*="st-key-est_pend_"] button { background: #fef3c7 !important; color: #78350f !important; border-color: #f59e0b !important; }
 [class*="st-key-est_proc_"] button { background: #dbeafe !important; color: #1e3a8a !important; border-color: #3b82f6 !important; }
 [class*="st-key-est_info_"] button { background: #ffedd5 !important; color: #7c2d12 !important; border-color: #f97316 !important; }
+[class*="st-key-est_pasar_"] button { background:#cffafe !important; color:#164e63 !important; border-color:#06b6d4 !important; }
 [class*="st-key-est_res_"] button { background: #dcfce7 !important; color: #14532d !important; border-color: #22c55e !important; }
 [class*="st-key-est_rech_"] button { background: #fee2e2 !important; color: #7f1d1d !important; border-color: #ef4444 !important; }
 
@@ -207,6 +210,8 @@ def stepper_estatus(estatus):
         items = [("done", "✓", "Recibida"), ("done", "✓", "En revisión"), ("done", "✓", "Resuelta")]
     elif estatus == "Rechazada":
         items = [("done", "✓", "Recibida"), ("done", "✓", "En revisión"), ("error", "✕", "Rechazada")]
+    elif estatus == "Pasar a firmar solicitud":
+        items = [("done", "✓", "Recibida"), ("done", "✓", "En revisión"), ("current", "3", "Pasar a firmar solicitud"), ("todo", "4", "Resuelta")]
     else:
         items = [("todo", "1", "Recibida"), ("todo", "2", "En revisión"), ("todo", "3", "Resuelta")]
     return _pasos_html(items)
