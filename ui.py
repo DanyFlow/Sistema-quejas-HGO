@@ -11,12 +11,12 @@ import html
 
 # estatus -> (ícono, fondo, texto)  [pares con buen contraste en cualquier tema]
 ESTADOS = {
-    "Pendiente": ("🟡", "#fef3c7", "#78350f"),
-    "En proceso": ("🔵", "#dbeafe", "#1e3a8a"),
-    "Requiere información": ("🟠", "#ffedd5", "#7c2d12"),
+    "Pendiente": ("⚠️", "#fef3c7", "#78350f"),
+    "En proceso": ("🚀", "#dbeafe", "#1e3a8a"),
+    "Requiere información": ("‼️", "#ffedd5", "#7c2d12"),
     "Pasar a firmar solicitud": ("✍️", "#cffafe", "#164e63"),
-    "Resuelto": ("🟢", "#dcfce7", "#14532d"),
-    "Rechazada": ("🔴", "#fee2e2", "#7f1d1d"),
+    "Resuelto": ("✔️", "#dcfce7", "#14532d"),
+    "Rechazada": ("❌", "#fee2e2", "#7f1d1d"),
     
 }
 ESTADOS_ORDEN = list(ESTADOS)
