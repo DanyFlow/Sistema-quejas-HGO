@@ -15,32 +15,35 @@ MARCA_COMPLETAR = "[COMPLETAR]"
 
 PLANTILLAS = [
     {"etiqueta": "🔎 Estamos revisando", "estatus": "En proceso",
-     "texto": "Hola {nombre}, recibimos tu queja con folio {folio} y ya la estamos revisando. "
+     "texto": "Hola {nombre}, recibimos tu solitud con folio {folio} y ya la estamos revisando. "
               "Te daremos respuesta a la brevedad."},
     {"etiqueta": "🕒 Validando asistencia", "estatus": "En proceso",
-     "texto": "Hola {nombre}, estamos validando tu asistencia de los días indicados en tu queja con folio {folio}. "
+     "texto": "Hola {nombre}, estamos validando tu asistencia de los días indicados en tu solicitud con folio {folio}. "
               "Te avisaremos en cuanto tengamos respuesta."},
     {"etiqueta": "📞 Te contactaremos", "estatus": "En proceso",
-     "texto": "Hola {nombre}, nos pondremos en contacto contigo por teléfono o WhatsApp para aclarar tu queja "
+     "texto": "Hola {nombre}, nos pondremos en contacto contigo por teléfono o WhatsApp para aclarar tu solicitud "
               "con folio {folio}."},
     {"etiqueta": "📎 Necesitamos documentos", "estatus": "Requiere información",
-     "texto": "Hola {nombre}, para continuar con tu queja con folio {folio} necesitamos que nos envíes lo siguiente: "
+     "texto": "Hola {nombre}, para dar seguimiento a tu solicitud con folio {folio} necesitamos que nos envíes lo siguiente: "
               "[COMPLETAR]. Puedes responder desde «Consultar mi queja»."},
     {"etiqueta": "❓ Falta aclarar un dato", "estatus": "Requiere información",
-     "texto": "Hola {nombre}, para resolver tu queja con folio {folio} necesitamos que nos aclares lo siguiente: "
+     "texto": "Hola {nombre}, para resolver tu solicitud con folio {folio} necesitamos que nos aclares lo siguiente: "
               "[COMPLETAR]. Puedes responder desde «Consultar mi queja»."},
     {"etiqueta": "✅ Ajuste aplicado", "estatus": "Resuelto",
-     "texto": "Hola {nombre}, se aplicó el ajuste correspondiente a tu queja con folio {folio}. "
-              "Lo verás reflejado en tu siguiente pago."},
+     "texto": "Hola {nombre}, se aplicó el ajuste correspondiente a tu solicitud con folio {folio}. "
+              "Lo verás reflejado proximamente."},
     {"etiqueta": "💰 Pago programado", "estatus": "Resuelto",
-     "texto": "Hola {nombre}, el pago pendiente de tu queja con folio {folio} quedó programado y se te cubrirá el "
+     "texto": "Hola {nombre}, el pago pendiente de tu solicitud con folio {folio} quedó procesado "
               "[COMPLETAR]."},
     {"etiqueta": "❌ No procede", "estatus": "Rechazada",
-     "texto": "Hola {nombre}, revisamos tu queja con folio {folio} y no procede porque [COMPLETAR]. "
-              "Si tienes más información, puedes registrarla de nuevo."},
+     "texto": "Hola {nombre}, revisamos tu solicitud con folio {folio} y no procede porque [COMPLETAR]. "
+              "Si tienes más información, puedes pasar directamente a RH por cualquier aclaracion."},
     {"etiqueta": "🔁 Queja duplicada", "estatus": "Rechazada",
-     "texto": "Hola {nombre}, tu queja con folio {folio} ya estaba registrada con el folio [COMPLETAR], "
+     "texto": "Hola {nombre}, tu solicitud con folio {folio} ya estaba registrada con el folio [COMPLETAR], "
               "por eso la cerramos. Puedes seguir el avance en ese folio."},
+    {"etiqueta": "✍️ Pasar a firmar", "estatus": "Pasar a firmar solitud",
+     "texto": "Hola {nombre}, la informacion de tu solitud con folio {folio} fue procesada y esta lista para su envio a oficinas centrales, pasa a firmar la solitud para continuar con el tramite."
+              },
 ]
 
 
