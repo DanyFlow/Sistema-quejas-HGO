@@ -203,7 +203,7 @@ def generar_folio(db):
 # =============================================================================
 # LECTURA PARA EL PANEL RH
 # =============================================================================
-ESTATUS_ABIERTOS = ("Pendiente", "En proceso", "Requiere información")
+ESTATUS_ABIERTOS = ("Pendiente", "En proceso", "Pasar a firmar solicitud", "Requiere información")
 ESTATUS_CERRADOS = ("Resuelto", "Rechazada")
 _FECHA_MINIMA = datetime.datetime(2000, 1, 1, tzinfo=datetime.timezone.utc)
 
